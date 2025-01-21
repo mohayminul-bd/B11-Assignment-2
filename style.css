@@ -1,0 +1,50 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+/* share class */
+.flex{
+    display: flex;
+}
+.orange{
+    color: rgb(254, 163, 1);
+}
+.blu{
+    color: rgb(1, 172, 253);
+}
+
+/* nav bar */
+.header{
+    background: rgb(247, 247, 247);
+}
+.nav-container-main{
+    justify-content: space-around;
+    align-items: center;
+}
+.nav-box-1 > div > h2{
+    font-size: 2rem;
+}
+.nav-box-1{
+    align-items: center;
+    gap: 12px;
+}
+.nav-box-2 > a{
+    font-size: 1.2rem;
+    text-decoration: none;
+    margin-left: 25px;
+}
+.nav-link-3{
+    color:rgb(5, 212, 223)
+}
+.nav-link-4{
+    color:rgb(93, 88, 239)
+}
+.nav-btn{
+    font-size: 1.2rem;
+    color: rgb(255, 255, 255);
+    border-radius: 12px;
+    background: rgb(254, 163, 1);
+    padding: 5px 15px;
+    border: none;
+}
