@@ -1,3 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+.raleway{
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .quicksand{
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+
 *{
     padding: 0px;
     margin: 0px;
@@ -13,13 +30,24 @@
 .blu{
     color: rgb(1, 172, 253);
 }
+.center{
+    text-align: center;
+}
+.color{
+    color: rgb(128, 128, 128);
+    font-family: Raleway;
+    font-size: 15.09px;
+    font-weight: 400;
+}
 
 /* nav bar */
-.header{
+.body{
     background: rgb(247, 247, 247);
+    width: 1080px auto;
+    padding: 20px 100px;
 }
 .nav-container-main{
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 .nav-box-1 > div > h2{
@@ -48,3 +76,209 @@
     padding: 5px 15px;
     border: none;
 }
+/* banner */
+.banner-container{
+    align-items: center;
+    gap: 40px;
+}
+.banner-box-1 > h1{
+    font-size: 3rem;
+    font-weight: 800;
+}
+.banner-box-1 > p{
+    color: rgb(17, 17, 17);
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+.banner-btn{
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 5px 20px;
+    border: none;
+    color: white;
+    background: rgb(17, 17, 17);
+}
+.banner-btn:hover{
+    background-color: rgb(32, 30, 30);
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.4s;
+}
+/* section standard */
+.standard{
+    background: url(assets/bg.png);
+    background-position: center;
+}
+.Standard-div{
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+}
+.standard > h1{
+    font-size: 2.2rem;
+    font-weight: 800;
+    margin: 60px 0px;
+    text-align: center;
+}
+.kinder-box{
+    box-sizing: border-box;
+    border: 0.94px solid rgb(222, 245, 255);
+    border-radius: 18.86px;
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180.00deg, rgb(222, 245, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+    width: 300px;
+    height: 360px;
+    padding: 10px;
+}
+.box-p-b{
+    margin-top: 10px;
+    cursor: pointer;
+}
+.box-p-o{
+    margin-top: 10px;
+    cursor: pointer;
+}
+.box-p-be{
+    margin-top: 10px;
+    cursor: pointer;
+    color: rgb(135, 0, 255);
+}
+.school-box{
+    box-sizing: border-box;
+    border: 0.94px solid rgb(255, 244, 220);
+    border-radius: 18.86px;
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180.00deg, rgb(255, 244, 220),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+    width: 300px;
+    height: 360px;
+    padding: 10px;
+}
+.middle-box{
+    box-sizing: border-box;
+    border: 0.94px solid rgb(242, 232, 255);
+    border-radius: 18.86px;
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+    width: 300px;
+    height: 360px;
+    padding: 10px;
+}
+.pading{
+    padding: 30px;
+}
+.box-title{
+    font-size: 1.2rem;
+    margin: 10px 0px;
+}
+
+.arrow{
+    display: flex;
+    justify-content: center;
+    margin: 60px 0px;
+    gap: 10px;
+}
+.roted-1{
+    rotate: 90deg;
+    border-radius: 30px;
+    background: rgb(254, 163, 1);
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+}
+.roted-2{
+    rotate: -90deg;
+    border-radius: 30px;
+    background: rgb(254, 163, 1);
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+}
+/* stories section */y
+
+.stories-section{
+    background-color: rgb(96, 245, 66);
+}
+
+.stories-section > h1 {
+    margin: 40px 0px ;
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+.stories-div{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+.img-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+} 
+ .class-room{
+    width: 500px;
+    height: 550px;
+    border-radius: 16px;
+    background: rgb(255, 255, 255);
+ }
+
+ .class-room > h4 {
+    font-size: 1.2rem;
+    font-weight: 700;
+ }
+ .class-room > img{
+    width: 500px;
+    border-radius: 10px;
+    position: relative;
+ }
+ .img-box-b{
+    width: 260px;
+    height: 270px;
+    border-radius: 16px;
+    background: rgb(255, 255, 255);
+ }
+ .img-box-b > img {
+    width: 260px;
+    border-radius: 10px;
+ }
+
+ .pading-2{
+    margin-top: 15px;
+    padding: 15px 30px;
+    font-size: 15px;
+    font-weight: 700;
+    font: bold;
+ }
+ .btn-1{
+    border-radius: 16px;
+    background: rgb(60, 216, 232);
+    padding: 7px 10px;
+    border: none;
+    position: absolute;
+    color: white;
+    margin-top: -50px;
+    margin-left: 20px;
+ }
+ .btn-2{
+    border-radius: 47.93px;
+    background: rgb(149, 178, 38);
+    padding: 7px 10px;
+    border: none;
+    position: absolute;
+    color: white;
+    margin-left: 20px;
+    margin-top: -50px;
+ }
+ .btn-3{
+    border-radius: 16px;
+    background: rgb(93, 88, 240);
+    padding: 7px 10px;
+    border: none;
+    position: absolute;
+    color: white;
+    margin-top: -50px;
+    margin-left: 20px;
+ }
