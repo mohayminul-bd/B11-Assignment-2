@@ -40,6 +40,11 @@
     font-size: 15.09px;
     font-weight: 400;
 }
+.hover-share:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.4s;
+}
 
 /* nav bar */
 .nav-container-main, .banner-container, .standard, .stories-section{
@@ -79,6 +84,13 @@
 }
 .mobile-nav, .nav-hr{
     display: none;
+}
+.mrq-style{
+    background-color: rgb(247, 247, 247);
+    color: rgb(23, 186, 251);
+    font-size: 3rem;
+    font-weight: 900;
+    font-weight: bold;
 }
 
 /* banner */
@@ -124,7 +136,7 @@
     gap: 50px;
     align-items: center;
     justify-content: center;
-    margin-top: 80px;
+    margin-top: 60px;
 }
 .standard > h1{
     font-size: 2.2rem;
@@ -189,6 +201,7 @@
     margin: 60px 0px;
     gap: 10px;
 }
+
 .roted-1{
     rotate: 90deg;
     border-radius: 30px;
@@ -197,6 +210,11 @@
     color: white;
     cursor: pointer;
 }
+.roted-1:hover{
+    background-color: rgb(248, 236, 21);
+    transform: scale(1.1);
+    transition: 0.4s;
+}
 .roted-2{
     rotate: -90deg;
     border-radius: 30px;
@@ -204,6 +222,11 @@
     padding: 10px;
     color: white;
     cursor: pointer;
+}
+.roted-2:hover{
+    background-color: rgb(248, 236, 21);
+    transform: scale(1.1);
+    transition: 0.4s;
 }
 /* stories section */
 
@@ -256,7 +279,9 @@
     width: 260px;
     border-radius: 10px;
  }
-
+ .mobile-box{
+    display: none;
+ }
  .pading-2{
     margin-top: 15px;
     padding: 15px 30px;
@@ -330,9 +355,17 @@
  .footer-box-2 > a {
     text-decoration: none;
     color: white;
+    font-size: 18px;
+    font-weight: 500;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     margin-top: 15px;
+ }
+ .footer-box-1{
+    align-items: center;
+    gap: 10px;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
  }
  .footer-box-2 > h4, .footer-box-3 > h4 {
     font-size: 20px;
@@ -344,9 +377,6 @@
     cursor: pointer;
  }
 
- .hide{
-    display: none;
- }
 
  @media screen and (max-width:576px){
     .banner-container, .Standard-div, .stories-div, .footer-container{
@@ -357,6 +387,7 @@
     }
     .banner-container{
         flex-direction: column-reverse;
+        text-align: center;
     }
     .stories-div{
         grid-template-columns: repeat(1, 1fr);
@@ -384,6 +415,14 @@
     }
     .banner-box > img {
         width: 370px;
+    }
+
+    .arrow{
+        display: none;
+    }
+
+    .mobile-box{
+        display: block;
     }
     .class-room{
         display: none;
